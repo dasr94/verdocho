@@ -1,0 +1,52 @@
+[08-Aug-2020 23:30:46 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:30:46 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:30:46 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:32:38 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:32:38 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:32:38 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:33:39 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:33:39 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:33:39 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:34:07 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:34:07 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:34:07 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:36:17 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:36:17 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:36:17 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:40:20 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:40:20 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:40:20 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[08-Aug-2020 23:41:00 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[08-Aug-2020 23:41:00 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[08-Aug-2020 23:41:00 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[09-Aug-2020 01:18:51 America/New_York] PHP Notice:  Undefined index: orden in /home/amarwxxl/verdocho.com/admin/php/action.php on line 182
+[09-Aug-2020 01:18:51 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 186
+[09-Aug-2020 01:18:51 America/New_York] PHP Notice:  Undefined offset: 0 in /home/amarwxxl/verdocho.com/admin/php/action.php on line 187
+[09-Aug-2020 01:52:10 America/New_York] PHP Notice:  Undefined variable: mail­ in /home/amarwxxl/verdocho.com/admin/php/action.php on line 271
+[09-Aug-2020 01:52:10 America/New_York] PHP Fatal error:  Uncaught Error: Call to a member function MsgHTML() on null in /home/amarwxxl/verdocho.com/admin/php/action.php:271
+Stack trace:
+#0 {main}
+  thrown in /home/amarwxxl/verdocho.com/admin/php/action.php on line 271
+[09-Aug-2020 19:31:16 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 122
+[10-Aug-2020 03:25:45 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 122
+[11-Aug-2020 22:32:24 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[12-Aug-2020 14:22:31 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[12-Aug-2020 14:22:33 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[12-Aug-2020 14:22:40 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[12-Aug-2020 14:22:42 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[01-Oct-2020 13:02:17 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[01-Oct-2020 13:29:43 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[01-Dec-2020 16:12:09 America/New_York] PHP Notice:  Undefined index: categoria in /home/amarwxxl/verdocho.com/admin/php/action.php on line 134
+[15-Dec-2020 13:46:46 America/New_York] PHP Notice:  Undefined index: categoria in /home/amarwxxl/verdocho.com/admin/php/action.php on line 134
+[18-Dec-2020 21:07:46 America/New_York] PHP Notice:  Undefined index: categoria in /home/amarwxxl/verdocho.com/admin/php/action.php on line 134
+[20-Dec-2020 17:19:31 America/New_York] PHP Notice:  Undefined index: categoria in /home/amarwxxl/verdocho.com/admin/php/action.php on line 134
+[18-Mar-2021 13:38:25 America/New_York] PHP Notice:  Undefined index: usuario in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 11
+[18-Mar-2021 13:38:25 America/New_York] PHP Notice:  Undefined index: pass in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 12
+[18-Mar-2021 13:38:28 America/New_York] PHP Notice:  Undefined index: usuario in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 11
+[18-Mar-2021 13:38:28 America/New_York] PHP Notice:  Undefined index: pass in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 12
+[18-Mar-2021 13:38:30 America/New_York] PHP Notice:  Undefined index: usuario in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 11
+[18-Mar-2021 13:38:30 America/New_York] PHP Notice:  Undefined index: pass in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 12
+[18-Mar-2021 13:38:33 America/New_York] PHP Notice:  Undefined index: usuario in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 11
+[18-Mar-2021 13:38:33 America/New_York] PHP Notice:  Undefined index: pass in /home/amarwxxl/verdocho.com/admin/php/sesion.php on line 12
+[21-Apr-2021 19:52:56 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
+[23-Jul-2021 19:24:14 America/New_York] PHP Notice:  Undefined index: tipo-pago in /home/amarwxxl/verdocho.com/admin/php/action.php on line 124
