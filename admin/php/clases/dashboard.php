@@ -8,7 +8,7 @@ class dashboard{
 
     function pedidosMesActual(){
         try {
-            $query = "SELECT count(*) as total FROM pedidos where month(date(fecha)) = month(date(current_timestamp()))";
+            $query = "SELECT count(*) as total FROM pedidos where month(date(fecha)) = month(date(current_timestamp())) and YEAR(date(fecha)) = YEAR(date(current_timestamp())) ";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchColumn();
@@ -18,7 +18,7 @@ class dashboard{
     }
     function pedidosMesPasado(){
         try {
-            $query = "SELECT count(*) as total FROM pedidos where month(date(fecha)) = month(date(current_timestamp())) - 1";
+            $query = "SELECT count(*) as total FROM pedidos where month(date(fecha)) = month(date(current_timestamp())) - 1 and YEAR(date(fecha)) = YEAR(date(current_timestamp()))";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchColumn();
@@ -28,7 +28,7 @@ class dashboard{
     }
     function clientesMesActual(){
         try {
-            $query = "SELECT count(*) as total FROM clientes where month(date(fecha_creado)) = month(date(current_timestamp()))";
+            $query = "SELECT count(*) as total FROM clientes where month(date(fecha_creado)) = month(date(current_timestamp())) and YEAR(date(fecha)) = YEAR(date(current_timestamp()))";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchColumn();
@@ -38,7 +38,7 @@ class dashboard{
     }
     function clientesCumpleaniosMesActual(){
         try {
-            $query = "SELECT count(*) as total FROM clientes where month(date(fecha_nac)) = month(date(current_timestamp()))";
+            $query = "SELECT count(*) as total FROM clientes where month(date(fecha_nac)) = month(date(current_timestamp())) and YEAR(date(fecha)) = YEAR(date(current_timestamp()))";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchColumn();
@@ -48,7 +48,7 @@ class dashboard{
     }
     function datosVentasMesActual(){
         try {
-            $query = "SELECT  round( sum( (b.cantidad * c.venta) - (b.cantidad * c.costo) ) , 2) as total, round( sum(b.cantidad * c.venta) , 2) as venta, round( sum(b.cantidad * c.costo) , 2) as costo, min(a.fecha) as inicio, max(a.fecha) as fin from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto where  month(date(a.fecha)) = month(curdate())";
+            $query = "SELECT  round( sum( (b.cantidad * c.venta) - (b.cantidad * c.costo) ) , 2) as total, round( sum(b.cantidad * c.venta) , 2) as venta, round( sum(b.cantidad * c.costo) , 2) as costo, min(a.fecha) as inicio, max(a.fecha) as fin from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto where  month(date(a.fecha)) = month(curdate()) and YEAR(date(fecha)) = YEAR(date(current_timestamp()))";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll();
@@ -58,7 +58,7 @@ class dashboard{
     }
     function datosVentasMesPasado(){
         try {
-            $query = "SELECT  round( sum( (b.cantidad * c.venta) - (b.cantidad * c.costo) ) , 2) as total, round( sum(b.cantidad * c.venta) , 2) as venta, round( sum(b.cantidad * c.costo) , 2) as costo, min(a.fecha) as inicio, max(a.fecha) as fin from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto where  month(date(a.fecha)) = month(curdate()) - 1";
+            $query = "SELECT  round( sum( (b.cantidad * c.venta) - (b.cantidad * c.costo) ) , 2) as total, round( sum(b.cantidad * c.venta) , 2) as venta, round( sum(b.cantidad * c.costo) , 2) as costo, min(a.fecha) as inicio, max(a.fecha) as fin from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto where  month(date(a.fecha)) = month(curdate()) - 1 and YEAR(date(fecha)) = YEAR(date(current_timestamp()))";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll();
@@ -81,7 +81,7 @@ class dashboard{
             $query = "SELECT day(date(a.fecha)) as fecha, 
             round(sum((b.cantidad * c.venta) - (b.cantidad * c.costo))) as dif, 
             sum(c.costo), sum(c.venta), sum(b.cantidad * c.costo) AS difcosto,  
-            sum(b.cantidad * c.venta) AS difventa from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto  where month(date(a.fecha)) = month(date(curdate()))  group by date(a.fecha)";
+            sum(b.cantidad * c.venta) AS difventa from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto  where month(date(a.fecha)) = month(date(curdate())) and YEAR(date(fecha)) = YEAR(date(current_timestamp())) group by date(a.fecha)";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -94,7 +94,7 @@ class dashboard{
             $query = "SELECT day(date(a.fecha)) as fecha, 
             round(sum((b.cantidad * c.venta) - (b.cantidad * c.costo))) as dif, 
             sum(c.costo), sum(c.venta), sum(b.cantidad * c.costo) AS difcosto,  
-            sum(b.cantidad * c.venta) AS difventa from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto  where month(date(a.fecha)) = month(date(curdate())) - 1  group by date(a.fecha)";
+            sum(b.cantidad * c.venta) AS difventa from pedidos as a inner join detalle_pedido as b ON a.codigo_pedido = b.numero_orden inner join stock as c on b.producto = c.producto  where month(date(a.fecha)) = month(date(curdate())) - 1 and YEAR(date(fecha)) = YEAR(date(current_timestamp())) group by date(a.fecha)";
             $stmt = $this->conn->prepare($query);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
